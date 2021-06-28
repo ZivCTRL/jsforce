@@ -34,6 +34,7 @@
   },
   "types": "./index",
   "scripts": {
+    "prepare": "npm run build",
     "clean": "rimraf lib/* module/* browser/*",
     "build": "run-s build:transpile build:bundle",
     "build:transpile": "run-p build:types build:lib build:module build:browser",
@@ -78,6 +79,7 @@
     "jsforce-gen-schema": "./bin/jsforce-gen-schema"
   },
   "dependencies": {
+    "stream" : "npm:stream-browserify",
     "@babel/runtime": "^7.12.5",
     "@babel/runtime-corejs3": "^7.12.5",
     "@types/node": "^12.19.9",
