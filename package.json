@@ -79,7 +79,7 @@
     "jsforce-gen-schema": "./bin/jsforce-gen-schema"
   },
   "dependencies": {
-    "stream": "npm:stream-browserify",
+    // "stream": "npm:stream-browserify",
     "@babel/runtime": "^7.12.5",
     "@babel/runtime-corejs3": "^7.12.5",
     "abort-controller": "^3.0.0",
