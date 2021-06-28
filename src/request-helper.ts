@@ -15,7 +15,7 @@ export function createHttpRequestHandlerStreams(req: HttpRequest) {
       duplex.end(reqBody, 'utf8');
     }, 0);
   }
-  duplex.on('response', async (res) => {
+  duplex.on('response', async (res: any) => {
     if (duplex.listenerCount('complete') > 0) {
       const resBody = await readAll(duplex);
       duplex.emit('complete', {
